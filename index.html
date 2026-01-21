@@ -8,35 +8,28 @@
 </head>
 
 
-
-
 <body>
 
+    <section class="main">
 
-    <section class="header">
 
-        <h1 class="outlined-text" style="padding-left: 16px; font-size: 72px;">The Ratpack's Rathub</h1>
-        <p class="outlined-text" style="padding-left: 32px; font-size: 24px;"> Your Go-to hub for all things rat related.</p>
+    <div id="header"></div>
+    <script>
+        fetch('Functions/Header.html')
+          .then(resp => resp.text())
+          .then(html => {
+            document.getElementById('header').innerHTML = html;
+          });
+    </script>
 
-        <a style="padding-left: 32px;" href="index.html"><img src="images/rat.jpeg" alt=""></a>
 
-        <!-- Todo: get this section to be cross-file -->
 
-        <nav>
-            <div class="nav-links_home">
-                <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="about.html">DELIVERABLES</a></li>
-                    <li><a href="">DOCUMENTS</a></li>
-                </ul>
-            </div>
-        </nav>
+
+
+
+
 
     </section>
-
-
-
 
 
 
