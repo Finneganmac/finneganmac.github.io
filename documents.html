@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>The Rathub: Documents</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+    <section class="main">
+
+    <div id="header"></div>
+    <script>
+        fetch('Functions/Header.html')
+          .then(resp => resp.text())
+          .then(html => {
+            document.getElementById('header').innerHTML = html;
+          });
+    </script>
+
+
+    <p class="outlined-text" style="padding-left: 32px; padding-top: 50px; font-size: 32px; max-width: 1500px">
+        Documents:
+        <br>
+    </p>
+
+
+        <!-- TODO: Make this a section module in Functions folder -->
+
+    <p class="outlined-text" style="padding-left: 48px; padding-top: 25px; font-size: 28px; max-width: 1500px">
+        Section:
+    </p>
+
+    <p style="padding-left: 64px; font-size: 22px;">
+    <a href="" target="_blank" rel="noopener"> Content1 </a> <br>
+    <a href="" target="_blank" rel="noopener"> Content2 </a> <br>
+    <a href="" target="_blank" rel="noopener"> Content3 </a> <br>
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
